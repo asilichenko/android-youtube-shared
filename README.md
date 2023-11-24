@@ -2,6 +2,15 @@
 
 ![app icon](https://github.com/asilichenko/android-share-with-browser/assets/1503214/b14bccd7-ea1c-4de0-9377-2098cbe591c3)
 
+To launch the browser with the desired YouTube link, you should use a specific intent:
+```
+final Intent intent = Intent.makeMainSelectorActivity(
+    Intent.ACTION_MAIN, Intent.CATEGORY_APP_BROWSER)
+  .setFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+  .setData(uri)
+  .addCategory(Intent.CATEGORY_SELECTED_ALTERNATIVE);
+```
+
 Log:
 ```
 11:49:06.283 onCreate
