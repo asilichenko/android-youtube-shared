@@ -1,5 +1,6 @@
-# android-share-with-browser
-An app that allows you to open YouTube shared links in the browser.
+# An app that allows you to open YouTube shared links in the browser.
+
+![app icon](https://github.com/asilichenko/android-share-with-browser/assets/1503214/b14bccd7-ea1c-4de0-9377-2098cbe591c3)
 
 Log:
 ```
@@ -10,3 +11,4 @@ Log:
 11:49:06.313 processReceivedText(): finished
 11:49:07.134 onDestroy()
 ```
+
