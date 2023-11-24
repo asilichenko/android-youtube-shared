@@ -12,3 +12,8 @@ Log:
 11:49:07.134 onDestroy()
 ```
 
+## Authors
+[Oleksii Sylichenko](https://github.com/asilichenko)
+
+## License
+[MIT License](LICENSE)
