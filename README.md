@@ -12,6 +12,12 @@ Log:
 11:49:07.134 onDestroy()
 ```
 
+## Sources
+* [AndroidManifest.xml](app/src/main/AndroidManifest.xml)
+* [MainActivity.java](app/src/main/java/ua/in/asilichenko/sharewithbrowser/MainActivity.java)
+* [WhenGetVideoIdTest.java](app/src/test/java/ua/in/asilichenko/sharewithbrowser/WhenGetVideoIdTest.java)
+
+
 ## Authors
 [Oleksii Sylichenko](https://github.com/asilichenko)
 
