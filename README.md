@@ -98,6 +98,10 @@ So, we need just convert it to:
 ```
 https://youtube.com/watch?v=video-ID
 ```
+or:
+```
+vnd.youtube:video-ID
+```
 
 and open in a YouTube app:
 ```
