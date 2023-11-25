@@ -109,9 +109,11 @@ final Intent intent = new Intent(Intent.ACTION_VIEW);
 intent.setData(uri);
 ```
 
+And since our application has completed its tasks, it is necessary to notify Android that it can be unloaded from memory by calling the `finish()` method.
+
 ## Special Cases
 
-When I tested my app on my old smartphone with MIUI Android, I encountered an issue where the intended app wouldn't start. I discovered that it could not run when my app was shut down by calling finish(), but it started as designed without this call. I received the error message in the logs:
+When I tested my app on my old smartphone with MIUI Android, I encountered an issue where the intended app wouldn't start. I discovered that it could not run when my app was shut down by calling `finish()`, but it started as designed without this call. I received the error message in the logs:
 ```
 com.android.server.am.ExtraActivityManagerService
 MIUILOG-
