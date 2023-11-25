@@ -43,14 +43,20 @@ import java.util.regex.Pattern;
 
 public class MainActivity extends AppCompatActivity {
 
+  private static final String SHORTS = "shorts";
   private static final String YOUTU_BE = "youtu.be";
   private static final String YOUTUBE_COM = "youtube.com";
 
   private static final String VIDEO_ID = "videoId";
+
   private static final String YOUTUBE_REGEX = "https?://youtu(\\.be/|be\\.com/watch\\?v=)(?<videoId>[A-Za-z0-9_\\-]+)";
   private static final Pattern YOUTUBE_PATTERN = Pattern.compile(YOUTUBE_REGEX);
 
+  private static final String SHORTS_REGEX = "https?://youtube\\.com/shorts/(?<videoId>[A-Za-z0-9_\\-]+)";
+  private static final Pattern SHORTS_PATTERN = Pattern.compile(SHORTS_REGEX);
+
   private static final String EMBED = "https://www.youtube.com/embed/";
+  private static final String VND_YOUTUBE = "vnd.youtube:";
 
   private void log(String msg) {
     Log.d(getLocalClassName(), msg);
@@ -87,26 +93,27 @@ public class MainActivity extends AppCompatActivity {
   private void processReceivedText(@NonNull String receivedText) {
     if (!receivedText.contains(YOUTU_BE) && !receivedText.contains(YOUTUBE_COM)) return;
 
-    final String videoId = getVideoId(receivedText);
+    final boolean isShorts = receivedText.contains(SHORTS);
+
+    final String videoId = getVideoId(receivedText, isShorts);
     log("videoId = " + videoId);
     if (null == videoId) return;
 
-    final Uri uri = Uri.parse(EMBED + videoId);
+    final Uri uri = Uri.parse((isShorts ? VND_YOUTUBE : EMBED) + videoId);
     log("uri = " + uri);
 
-    final Intent intent = Intent.makeMainSelectorActivity(
-            Intent.ACTION_MAIN, Intent.CATEGORY_APP_BROWSER)
-        .setFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
-        .setData(uri)
-        .addCategory(Intent.CATEGORY_SELECTED_ALTERNATIVE);
+    final Intent intent = isShorts
+        ? new Intent(Intent.ACTION_VIEW)
+        : Intent.makeMainSelectorActivity(Intent.ACTION_MAIN, Intent.CATEGORY_APP_BROWSER);
+    intent.setData(uri);
     startActivity(intent);
 
     log("processReceivedText(): finished");
   }
 
   @Nullable
-  String getVideoId(@NonNull String val) {
-    final Matcher matcher = YOUTUBE_PATTERN.matcher(val);
+  String getVideoId(@NonNull String val, boolean isShorts) {
+    final Matcher matcher = isShorts ? SHORTS_PATTERN.matcher(val) : YOUTUBE_PATTERN.matcher(val);
     return matcher.find() ? matcher.group(VIDEO_ID) : null;
   }
 
