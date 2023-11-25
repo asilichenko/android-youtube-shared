@@ -5,10 +5,8 @@
 To launch the browser with the desired YouTube link, you should use a specific intent:
 ```
 final Intent intent = Intent.makeMainSelectorActivity(
-    Intent.ACTION_MAIN, Intent.CATEGORY_APP_BROWSER)
-  .setFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
-  .setData(uri)
-  .addCategory(Intent.CATEGORY_SELECTED_ALTERNATIVE);
+    Intent.ACTION_MAIN, Intent.CATEGORY_APP_BROWSER
+  ).setData(uri);
 ```
 
 Log:
