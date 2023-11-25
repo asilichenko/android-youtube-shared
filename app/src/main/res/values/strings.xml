@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Share With Browser</string>
+    <string name="info_msg">Click \"Share\" in the YouTube app</string>
 </resources>

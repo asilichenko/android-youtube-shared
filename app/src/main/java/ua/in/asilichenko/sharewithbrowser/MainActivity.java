@@ -32,6 +32,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -63,7 +64,9 @@ public class MainActivity extends AppCompatActivity {
 
     final String receivedText = getReceivedText();
     log("receivedText = " + receivedText);
+
     if (null != receivedText) processReceivedText(receivedText);
+    else Toast.makeText(this, getString(R.string.info_msg), Toast.LENGTH_LONG).show();
 
     finish();
   }
