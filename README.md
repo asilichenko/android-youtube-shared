@@ -23,8 +23,8 @@ Log:
 
 ## Sources
 * [AndroidManifest.xml](app/src/main/AndroidManifest.xml)
-* [MainActivity.java](app/src/main/java/ua/in/asilichenko/sharewithbrowser/MainActivity.java)
-* [WhenGetVideoIdTest.java](app/src/test/java/ua/in/asilichenko/sharewithbrowser/WhenGetVideoIdTest.java)
+* [MainActivity.java](app/src/main/java/ua/in/asilichenko/youtubeshared/MainActivity.java)
+* [WhenGetVideoIdTest.java](app/src/test/java/ua/in/asilichenko/youtubeshared/WhenGetVideoIdTest.java)
 
 
 ## Authors

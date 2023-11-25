@@ -22,7 +22,7 @@
  * SOFTWARE.
  */
 
-package ua.in.asilichenko.sharewithbrowser;
+package ua.in.asilichenko.youtubeshared;
 
 import static android.content.Intent.ACTION_SEND;
 import static android.content.Intent.EXTRA_TEXT;

@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace 'ua.in.asilichenko.sharewithbrowser'
+    namespace 'ua.in.asilichenko.youtubeshared'
     compileSdk 33
 
     defaultConfig {
-        applicationId "ua.in.asilichenko.sharewithbrowser"
+        applicationId "ua.in.asilichenko.youtubeshared"
         minSdk 26
         targetSdk 33
         versionCode 1

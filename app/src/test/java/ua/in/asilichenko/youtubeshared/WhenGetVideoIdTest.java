@@ -22,7 +22,7 @@
  * SOFTWARE.
  */
 
-package ua.in.asilichenko.sharewithbrowser;
+package ua.in.asilichenko.youtubeshared;
 
 import static org.junit.Assert.*;
 import static org.mockito.ArgumentMatchers.anyBoolean;

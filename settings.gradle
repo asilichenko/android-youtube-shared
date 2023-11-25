@@ -13,5 +13,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Share With Browser"
+rootProject.name = "YouTube Shared"
 include ':app'
