@@ -118,7 +118,9 @@ When I tested my app on my old smartphone with MIUI Android, I encountered an is
 com.android.server.am.ExtraActivityManagerService
 MIUILOG-
 Permission Denied Activity :
-Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER]
+Intent {
+  sel=act=android.intent.action.MAIN
+  cat=[android.intent.category.APP_BROWSER]}
 ....
 ```
 
