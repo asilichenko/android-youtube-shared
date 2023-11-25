@@ -87,7 +87,7 @@ Here, you can see the next sequence:
 1. An embedded link for the browser is generated.
 1. After sending the converted link to the browser, our app quickly finishes its execution.
 
-When I finished implementing the 'share with the browser' functionality, I decided to expand the capabilities of my app a bit. There is another drawback on YouTube that my application can address – specifically, the inability to open "Shorts" videos in the standard video format in order to access the playback speed control feature.
+When I finished implementing the 'share with the browser' functionality, I decided to expand the capabilities of my app a bit. There is another drawback on YouTube that my application can address – the absence of the "Open as Regular Video" button for "Shorts" in order to access the playback speed control feature.
 
 There is a "Shorts" link format:
 ```
