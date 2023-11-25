@@ -11,7 +11,8 @@ Initially, I manually performed these steps since I lacked Android app developme
 
 ## Disclaimer
 
-This application is created with no malicious intent. It is not intended to harm or interfere with any actions of Google or advertisers on the YouTube platform. The application solely automates specific actions that a regular user could manually perform. The functionality of the application adheres to all laws and does not alter any standard functionalities of the Android platform or other applications. It merely utilizes the capabilities provided by the Android platform and other applications.
+> [!NOTE]
+> This application is created with no malicious intent. It is not intended to harm or interfere with any actions of Google or advertisers on the YouTube platform. The application solely automates specific actions that a regular user could manually perform. The functionality of the application adheres to all laws and does not alter any standard functionalities of the Android platform or other applications. It merely utilizes the capabilities provided by the Android platform and other applications.
 
 ---
 
