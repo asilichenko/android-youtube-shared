@@ -25,6 +25,7 @@
 package ua.in.asilichenko.sharewithbrowser;
 
 import static org.junit.Assert.*;
+import static org.mockito.ArgumentMatchers.anyBoolean;
 import static org.mockito.ArgumentMatchers.anyString;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
@@ -39,22 +40,30 @@ public class WhenGetVideoIdTest {
   @Before
   public void setUp() {
     mainActivity = mock(MainActivity.class);
-    when(mainActivity.getVideoId(anyString())).thenCallRealMethod();
+    when(mainActivity.getVideoId(anyString(), anyBoolean())).thenCallRealMethod();
   }
 
   @Test
-  public void fullFormatShouldBeParsed() {
+  public void youtubeComShouldBeParsed() {
     final String input = "https://youtube.com/watch?v=abc-DFJ";
     final String expected = "abc-DFJ";
-    final String actual = mainActivity.getVideoId(input);
+    final String actual = mainActivity.getVideoId(input, false);
     assertEquals(expected, actual);
   }
 
   @Test
-  public void shortFormatShouldBeParced() {
+  public void youtuBeShouldBeParsed() {
     final String input = "https://youtu.be/abc-DFJ";
     final String expected = "abc-DFJ";
-    final String actual = mainActivity.getVideoId(input);
+    final String actual = mainActivity.getVideoId(input, false);
+    assertEquals(expected, actual);
+  }
+
+  @Test
+  public void shortsShouldBeParsed() {
+    final String input = "https://youtube.com/shorts/abc-DFJ";
+    final String expected = "abc-DFJ";
+    final String actual = mainActivity.getVideoId(input, true);
     assertEquals(expected, actual);
   }
 }
