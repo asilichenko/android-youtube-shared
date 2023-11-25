@@ -3,6 +3,12 @@ An app that allows you to open YouTube shared links in the browser and open Shor
 
 ![app icon](https://github.com/asilichenko/android-share-with-browser/assets/1503214/b14bccd7-ea1c-4de0-9377-2098cbe591c3)
 
+## Disclaimer
+
+This application is created with no malicious intent. It is not intended to harm or interfere with any actions of Google or advertisers on the YouTube platform. The application solely automates specific actions that a regular user could manually perform. The functionality of the application adheres to all laws and does not alter any standard functionalities of the Android platform or other applications. It merely utilizes the capabilities provided by the Android platform and other applications.
+
+---
+
 To launch the browser with the desired YouTube link, you should use a specific intent:
 ```
 final Intent intent = Intent.makeMainSelectorActivity(
