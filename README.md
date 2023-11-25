@@ -128,6 +128,10 @@ After spending some time searching on the Internet, I found out that the problem
 
 ![MIUI Start in background](https://github.com/asilichenko/android-youtube-shared/assets/1503214/7c9b4903-464f-4029-b09f-552071b118b0)
 
+**Another case**
+
+If the author of the video has disabled embedding, it won't be possible to watch such a video using the method described in this article. However, it's worth noting that such cases are extremely rare.
+
 ## Sources
 * [AndroidManifest.xml](app/src/main/AndroidManifest.xml)
 * [MainActivity.java](app/src/main/java/ua/in/asilichenko/youtubeshared/MainActivity.java)
