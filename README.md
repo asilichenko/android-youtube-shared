@@ -1,5 +1,5 @@
 # YouTube Shared
-An app that allows you to open YouTube shared links in the browser and open Shorts video in the YouTube app as common video.
+Android app that converts YouTube video link into ads-free browser video link. 
 
 ![app icon](https://github.com/asilichenko/android-share-with-browser/assets/1503214/b14bccd7-ea1c-4de0-9377-2098cbe591c3)
 
