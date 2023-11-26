@@ -16,4 +16,4 @@ app->Web-browser:open embed link
 activate Web-browser
 deactivate app
 destroyafter app
-Web-browser-->>User:play video
+User<<--Web-browser:play video
