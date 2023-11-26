@@ -11,7 +11,7 @@ deactivate YouTube
 
 activate app
 note over app: convert link
-app->Web-browser:Open embed link
+app->Web-browser:open embed link
 
 activate Web-browser
 deactivate app
