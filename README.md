@@ -25,7 +25,7 @@ Let's first determine the functions our application should have:
   1. Create an 'embedded link' with the received ID.
   1. Open the 'embedded link' in the browser (avoid launching the YouTube app as the default app for YouTube links).
  
-![Sequence diagram](docs/uml/img/sequence-diagram.png)
+![Sequence diagram: Web-browser](docs/uml/img/sequence-diagram.png)
 
 ## Main Activity implementation
 
@@ -113,6 +113,8 @@ intent.setData(uri);
 
 And since our application has completed its tasks, it is necessary to notify Android that it can be unloaded from memory by calling the `finish()` method.
 
+![Sequence diagram: Shorts](docs/uml/img/shorts-sequence.png)
+
 ## Special Cases
 
 When I tested my app on my old smartphone with MIUI Android, I encountered an issue where the intended app wouldn't start. I discovered that it could not run when my app was shut down by calling `finish()`, but it started as designed without this call. I received the error message in the logs:
@@ -138,7 +140,8 @@ If the author of the video has disabled embedding, it won't be possible to watch
 * [AndroidManifest.xml](app/src/main/AndroidManifest.xml)
 * [MainActivity.java](app/src/main/java/ua/in/asilichenko/youtubeshared/MainActivity.java)
 * [WhenGetVideoIdTest.java](app/src/test/java/ua/in/asilichenko/youtubeshared/WhenGetVideoIdTest.java)
-* [Sequence diagram](docs/uml/txt/sequence-diagram.txt)
+* [Sequence diagram: Web-browser](docs/uml/txt/sequence-diagram.txt)
+* [Sequence diagram: Shorts](docs/uml/txt/shorts-sequence.txt)
 
 ## Authors
 [Oleksii Sylichenko](https://github.com/asilichenko)
