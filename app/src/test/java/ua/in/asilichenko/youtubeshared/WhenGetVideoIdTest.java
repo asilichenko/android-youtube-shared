@@ -52,6 +52,14 @@ public class WhenGetVideoIdTest {
   }
 
   @Test
+  public void extraParametersShouldNotBeCountedAsPartOfVideoId() {
+    final String input = "https://youtube.com/watch?v=abc-DFJ&si=a_bCDEfj1-HIjK-m";
+    final String expected = "abc-DFJ";
+    final String actual = mainActivity.getVideoId(input, false);
+    assertEquals(expected, actual);
+  }
+
+  @Test
   public void youtuBeShouldBeParsed() {
     final String input = "https://youtu.be/abc-DFJ";
     final String expected = "abc-DFJ";
