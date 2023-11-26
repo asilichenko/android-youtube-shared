@@ -138,7 +138,7 @@ If the author of the video has disabled embedding, it won't be possible to watch
 * [AndroidManifest.xml](app/src/main/AndroidManifest.xml)
 * [MainActivity.java](app/src/main/java/ua/in/asilichenko/youtubeshared/MainActivity.java)
 * [WhenGetVideoIdTest.java](app/src/test/java/ua/in/asilichenko/youtubeshared/WhenGetVideoIdTest.java)
-* [Sequence diagram](docs/sequence-diagram.txt)
+* [Sequence diagram](docs/uml/txt/sequence-diagram.txt)
 
 ## Authors
 [Oleksii Sylichenko](https://github.com/asilichenko)
