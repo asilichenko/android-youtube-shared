@@ -3,15 +3,15 @@ fontawesome f167 YouTube #red
 fontawesome f17b app #green
 fontawesome f268 Web-browser #1da1f2
 
-User->YouTube:click "Share"
+User->YouTube:share
 
 activate YouTube
-YouTube->*app:send link
+YouTube->*app:https://youtu.be/video-ID?...
 deactivate YouTube
 
 activate app
 note over app: convert link
-app->Web-browser:open embed link
+app->Web-browser:https://www.youtube.com/embed/video-ID
 
 activate Web-browser
 deactivate app
