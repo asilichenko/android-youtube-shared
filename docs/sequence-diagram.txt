@@ -1,0 +1,19 @@
+actor #green:0.5 User
+fontawesome f167 YouTube #red
+fontawesome f17b app #green
+fontawesome f268 Web-browser #1da1f2
+
+User->YouTube:click "Share"
+
+activate YouTube
+YouTube->*app:send link
+deactivate YouTube
+
+activate app
+note over app: convert link
+app->Web-browser:Open embed link
+
+activate Web-browser
+deactivate app
+destroyafter app
+Web-browser-->>User:play video
