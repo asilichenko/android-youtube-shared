@@ -24,6 +24,8 @@ Let's first determine the functions our application should have:
   1. Extract ID.
   1. Create an 'embedded link' with the received ID.
   1. Open the 'embedded link' in the browser (avoid launching the YouTube app as the default app for YouTube links).
+ 
+![Sequence diagram](docs/uml/img/sequence-diagram.png)
 
 ## Main Activity implementation
 
@@ -136,9 +138,13 @@ If the author of the video has disabled embedding, it won't be possible to watch
 * [AndroidManifest.xml](app/src/main/AndroidManifest.xml)
 * [MainActivity.java](app/src/main/java/ua/in/asilichenko/youtubeshared/MainActivity.java)
 * [WhenGetVideoIdTest.java](app/src/test/java/ua/in/asilichenko/youtubeshared/WhenGetVideoIdTest.java)
+* [Sequence diagram](docs/sequence-diagram.txt)
 
 ## Authors
 [Oleksii Sylichenko](https://github.com/asilichenko)
+
+## References and Tools
+* [UML Diagrams](docs/uml) were created by https://sequencediagram.org
 
 ## License
 [MIT License](LICENSE)
