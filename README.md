@@ -25,8 +25,6 @@ Let's first determine the functions our application should have:
   1. Create an 'embedded link' with the received ID.
   1. Open the 'embedded link' in the browser (avoid launching the YouTube app as the default app for YouTube links).
  
-![Sequence diagram: Web-browser](docs/uml/img/sequence-diagram.png)
-
 ## Main Activity implementation
 
 This is what an embedded link looks like:
@@ -88,6 +86,8 @@ Here, you can see the next sequence:
 1. The video ID is successfully extracted.
 1. An embedded link for the browser is generated.
 1. After sending the converted link to the browser, our app quickly finishes its execution.
+
+![Sequence diagram: Web-browser](docs/uml/img/sequence-diagram.png)
 
 When I finished implementing the 'share with the browser' functionality, I decided to expand the capabilities of my app a bit. There is another drawback on YouTube that my application can address – the absence of the "Open as Regular Video" button for "Shorts" in order to access the playback speed control feature.
 
