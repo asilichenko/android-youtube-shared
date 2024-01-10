@@ -143,6 +143,9 @@ If the author of the video has disabled embedding, it won't be possible to watch
 * [Sequence diagram: Web-browser](docs/uml/txt/sequence-diagram.txt)
 * [Sequence diagram: Shorts](docs/uml/txt/shorts-sequence.txt)
 
+## Releases
+* [Release 1.0](app/release/youtubeshared-1.0.apk)
+
 ## Authors
 [Oleksii Sylichenko](https://github.com/asilichenko)
 
